@@ -50,11 +50,7 @@ async def handle_image(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_document(processed, filename="processed.png")
 
 def main():
-    token = os.getenv("TELEGRAM_BOT_TOKEN")
-    if not token:
-        raise ValueError("TELEGRAM_BOT_TOKEN not found in environment variables")
-    
-    application = Application.builder().token(token).job_queue(None).build()
+    application = Application.builder().token("8465431068:AAHNWVf2hgiwpg-29eATGvezCTPpcPf8SHU").job_queue(None).build()
 
     application.add_handler(MessageHandler(filters.PHOTO, handle_image))
 
