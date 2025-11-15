@@ -66,4 +66,3 @@ The bot applies the following transformations to each image:
 ## License
 
 This project is open source and available for personal use.
-
