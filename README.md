@@ -59,6 +59,26 @@ The bot applies the following transformations to each image:
 - Pillow (PIL)
 - python-dotenv
 
+## Deploying to Railway (24/7 Hosting)
+
+To keep your bot running 24/7, you can deploy it to Railway:
+
+1. **Create a Railway account** at [railway.app](https://railway.app)
+
+2. **Create a new project** and connect your GitHub repository
+
+3. **Add environment variable**:
+   - Go to your project → **Variables** tab
+   - Add variable:
+     - Key: `TELEGRAM_BOT_TOKEN`
+     - Value: Your bot token from [@BotFather](https://t.me/BotFather)
+
+4. **Deploy**: Railway will automatically deploy your bot using the configuration files in the repository
+
+5. **Monitor**: Check the logs to ensure the bot is running successfully
+
+The bot will now run 24/7 on Railway's servers!
+
 ## Security Note
 
 ⚠️ Never commit your `.env` file or expose your bot token. The token is like a password that controls your bot.
